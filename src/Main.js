@@ -14,6 +14,11 @@ class Main extends Component {
           total: 0
         };
     }
+    SortList() {
+      this.setState(prevState => {
+        this.state.itemList.sort((a, b) => (a.id - b.id));
+    });
+  }
 
     addToList = (item) => {
 
@@ -28,11 +33,10 @@ class Main extends Component {
       var templist = this.state.itemList;
       templist.push(temp);
 
-      const list = templist;
-
+      this.SortList();
       
       this.setState({ 
-        itemList: list,
+        itemList: templist,
         currentId: this.state.currentId+1,
         total: this.state.total+item.price
       });
