@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "name": "Paper",
+        "price": 10.99
+    },
+    {
+        "id": 2,
+        "name": "Pen",
+        "price": 26.00
+    },
+    {
+        "id": 3,
+        "name": "Case",
+        "price": 26.99
+    },
+    {
+        "id": 4,
+        "name": "Keyboard",
+        "price": 26.99
+    },
+    {
+        "id": 5,
+        "name": "Mouse",
+        "price": 28.99
+    },
+    {
+        "id": 6,
+        "name": "Speakers",
+        "price": 289.00
+    },
+    {
+        "id": 7,
+        "name": "Earbuds",
+        "price": 22.99
+    },
+    {
+        "id": 8,
+        "name": "Router",
+        "price": 22.99
+    },
+    {
+        "id": 9,
+        "name": "Notebook",
+        "price": 42.99
+    },
+    {
+        "id": 10,
+        "name": "Laptop",
+        "price": 1242.00
+    },
+    {
+        "id": 11,
+        "name": "Desktop",
+        "price": 232.73
+    },
+    {
+        "id": 12,
+        "name": "Desk",
+        "price": 722.00
+    },
+    {
+        "id": 13,
+        "name": "ABB",
+        "price": 33.51
+    },
+    {
+        "id": 14,
+        "name": "BBC",
+        "price": 4.00
+    },
+    {
+        "id": 15,
+        "name": "SSD",
+        "price": 2.59
+    },
+    {
+        "id": 16,
+        "name": "TTWW",
+        "price": 2.39
+    },
+    {
+        "id": 17,
+        "name": "GGA",
+        "price": 12.99
+    },
+    {
+        "id": 18,
+        "name": "HHA",
+        "price": 22.54
+    },
+    {
+        "id": 19,
+        "name": "JCB",
+        "price": 52.99
+    },{
+        "id": 20,
+        "name": "ETDX",
+        "price": 12.99
+    }
+]
