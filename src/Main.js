@@ -4,6 +4,8 @@ import { Container, Row, Col } from 'reactstrap';
 import Items from './Items';
 import Total from './Total';
 
+import './Main.css';
+
 class Main extends Component {
     constructor(props) {
         super(props);
@@ -62,15 +64,23 @@ class Main extends Component {
 
     render() {
         return (
-            <div className="App">
+            <div className="Main">
             <Container>
               <Row>
-                <Col xs="6">
-                  <Items addToList={this.addToList}/>
-                </Col>
-                <Col xs="6">
-                  <Total itemList={this.state.itemList} removeFromList={this.removeFromList} clearList={this.clearList} total={this.state.total.toFixed(2)}/>
-                </Col>
+              <Col>
+                <div style={{height: '75vh', width: '45vw', overflowY: 'scroll'}}>
+                  
+                    <Items addToList={this.addToList}/>
+                  
+                </div>
+              </Col>
+                
+                  <Col>
+                    <div style={{height: '75vh', width: '35vw', overflowY: 'scroll'}}>
+                    <Total itemList={this.state.itemList} removeFromList={this.removeFromList} clearList={this.clearList} total={this.state.total.toFixed(2)}/>
+                    </div>
+                  </Col>
+                
               </Row>
             </Container>
               

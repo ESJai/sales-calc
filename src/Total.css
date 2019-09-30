@@ -1,0 +1,17 @@
+.Cart {
+    height: 100%;
+    background-color: #80ced6;
+    font-size: 60%;
+}
+
+.TopBar {
+    font-weight: bold;
+}
+
+.remove {
+    font-size: 50%;
+}
+
+.clear {
+    font-size: 50%;
+}

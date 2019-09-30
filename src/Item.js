@@ -1,20 +1,45 @@
 import React, {Component} from 'react';
 
-import { Button, Row } from 'reactstrap';
+import { Button, Row, Col} from 'reactstrap';
 
 
 import './Item.css';
 class Item extends Component {
-
+    
 
     render() {
-        return(
-                <Button size="lg" className="item" onClick={() => this.props.addToList(this.props.item)}>
-                   <Row style={{marginTop: "2px", marginLeft: "2px", marginRight: "2px", marginBottom: "1px" }}>{this.props.item.id} {this.props.item.name}</Row>
-                   <Row style={{marginLeft: "2px", marginRight: "2px", marginBottom: "2px" }}>${this.props.item.price}</Row>
-               </Button>
+        var color = "primary";
+        if(this.props.item.catagory==="Book")
+            color = "warning";
+        else if(this.props.item.catagory==="Playroom Material")
+            color = "success";
+        else if(this.props.item.catagory==="Merchandise")
+            color = "secondary";
 
-               
+        return(
+                <Button size="sm" color={color} className="item" onClick={() => this.props.addToList(this.props.item)}>
+                    <Row>
+                        <Col>
+                            <div className="col1">
+                                {this.props.item.id}
+                            </div>
+                        </Col>
+                    </Row>
+                   <Row>
+                        <Col>
+                            <div className="col2">
+                                {this.props.item.name}
+                            </div>
+                        </Col>
+                </Row>
+                   <Row>
+                       <Col>
+                            <div className="col3">
+                                ${this.props.item.price}
+                            </div>
+                       </Col>
+                    </Row>
+               </Button>
         )
     }
 }

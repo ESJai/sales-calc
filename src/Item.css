@@ -1,7 +1,22 @@
 .item {
-    width: auto;
-    min-width: 10px;
-    height: auto;  
-    margin-left: 10px;
-    margin-top: 10px;
+    width: 100px;
+    height: 75px;
+
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
   }
+
+.col1 {
+  font-size: 65%;
+}
+
+.col2 {
+  font-weight: bold;
+  font-size: 65%;
+}
+
+.col3 {
+  font-size: 65%;
+}

@@ -1,7 +1,33 @@
 .items {
-    background-color: #FFFFFF;
-    border: black;
     text-align: center;
+    width: "100%";
+  
+  }
 
+.DVD {
+    text-align: left;
+    font-weight: bold;
+    width: "100%";
+  
+  }
+
+.Books {
+    text-align: left;
+    font-weight: bold;
+    width: "100%";
+  
+}
+
+.Playroom {
+    text-align: left;
+    font-weight: bold;
+    width: "100%";
+  
+  }
+
+.Merchandise {
+    text-align: left;
+    font-weight: bold;
+    width: "100%";
   
   }
