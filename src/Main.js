@@ -65,23 +65,24 @@ class Main extends Component {
     render() {
         return (
             <div className="Main">
-            <Container>
-              <Row>
-              <Col>
-                <div style={{height: '75vh', width: '45vw', overflowY: 'scroll'}}>
-                  
-                    <Items addToList={this.addToList}/>
-                  
-                </div>
-              </Col>
+            <Container style={{height: "90vh", width: "100vw", padding: 0, margin: "auto"}}>
+              <Row style={{height: "100vh", width: "100%", padding: 0, margin: 0}}>
+                <Col style={{width: "50%", padding: 0, margin: 0}}>
+                  <div className="Items">
+                    
+                      <Items addToList={this.addToList}/>
+                    
+                  </div>
+                </Col>
                 
-                  <Col>
-                    <div style={{height: '75vh', width: '35vw', overflowY: 'scroll'}}>
-                    <Total itemList={this.state.itemList} removeFromList={this.removeFromList} clearList={this.clearList} total={this.state.total.toFixed(2)}/>
+                  <Col style={{width: "50%", padding: 0, marginLeft: "2em"}}>
+                    <div className="Total">
+                      <Total itemList={this.state.itemList} removeFromList={this.removeFromList} clearList={this.clearList} total={this.state.total.toFixed(2)}/>
                     </div>
                   </Col>
                 
               </Row>
+
             </Container>
               
               

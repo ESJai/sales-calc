@@ -1,22 +1,24 @@
 .item {
-    width: 100px;
-    height: 75px;
+    width: 30%;
+    height: 100px;
 
     margin-left: 1%;
-    margin-top: 1%;
     margin-bottom: 1%;
 
   }
 
 .col1 {
-  font-size: 65%;
+  text-align: center;
+  font-size: 0.5rem;
+  
 }
 
 .col2 {
-  font-weight: bold;
-  font-size: 65%;
+  text-align: center;
+  font-size: 0.5rem;
 }
 
 .col3 {
-  font-size: 65%;
+  text-align: center;
+  font-size: 0.8rem;
 }

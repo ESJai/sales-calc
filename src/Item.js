@@ -17,22 +17,24 @@ class Item extends Component {
             color = "secondary";
 
         return(
-                <Button size="sm" color={color} className="item" onClick={() => this.props.addToList(this.props.item)}>
-                    <Row>
+                <Button color={color} className="item" onClick={() => this.props.addToList(this.props.item)}>
+                    <Row style={{height: "20%"}}>
                         <Col>
                             <div className="col1">
                                 {this.props.item.id}
                             </div>
+                           
                         </Col>
+                            
                     </Row>
-                   <Row>
+                   <Row style={{height: "60%"}}>
                         <Col>
                             <div className="col2">
                                 {this.props.item.name}
                             </div>
                         </Col>
                 </Row>
-                   <Row>
+                   <Row style={{height: "20%"}}>
                        <Col>
                             <div className="col3">
                                 ${this.props.item.price}
