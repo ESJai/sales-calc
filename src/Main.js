@@ -22,6 +22,15 @@ class Main extends Component {
     });
   }
 
+  RecalculateTotal() {
+    var tempTotal=0;
+    this.state.itemList.map((item, key) => {
+      tempTotal+=item.price;
+    });
+    this.setState({total: tempTotal});
+    
+  }
+
     addToList = (item) => {
 
       
@@ -38,19 +47,21 @@ class Main extends Component {
       this.SortList();
       
       this.setState({ 
-        itemList: templist,
-        currentId: this.state.currentId+1,
-        total: this.state.total+item.price
-      });
+          itemList: templist,
+          currentId: this.state.currentId+1
+        }, ()=> this.RecalculateTotal()
+      );
+
     }
 
     removeFromList = (item) => {
       const list = this.state.itemList.filter(temp => temp.list_id !== item.list_id);
 
       this.setState({ 
-        itemList: list,
-        total: this.state.total-item.price
-      });
+          itemList: list,
+        }, ()=> this.RecalculateTotal()
+      );
+      
     }
 
     clearList = () => {
